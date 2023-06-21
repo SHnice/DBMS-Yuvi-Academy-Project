@@ -82,7 +82,7 @@ The system caters to three main users:
 
 - The system is developed for Windows and currently executed on localhost:8000. It requires a server, operating system, and database to function correctly.
 
-#Installation of Django App with MySQL Database
+# Installation of Django App with MySQL Database
 
 ## Prerequisites
 
