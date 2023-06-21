@@ -81,6 +81,89 @@ The system caters to three main users:
 ### System Requirements:
 
 - The system is developed for Windows and currently executed on localhost:8000. It requires a server, operating system, and database to function correctly.
+
+#Installation of Django App with MySQL Database
+
+## Prerequisites
+
+Make sure you have the following software installed on your system:
+
+- Python (version 3.7 or higher)
+- Django (version 3.2 or higher)
+- MySQL (version 5.7 or higher)
+
+## Installation
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/SHnice/DBMS-Yuvi-Academy-Project
+   ```
+
+2. Create and activate a virtual environment (optional, but recommended):
+
+   ```bash
+   python3 -m venv myenv
+   source myenv/bin/activate
+   ```
+
+3. Install the required Python packages:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Create a MySQL database for your application.
+
+5. Update the database settings in the `settings.py` file located in the project's directory (`myapp/settings.py`). Modify the following lines with your database details:
+
+   ```python
+   DATABASES = {
+       'default': {
+           'ENGINE': 'django.db.backends.mysql',
+           'NAME': 'your_database_name',
+           'USER': 'your_database_user',
+           'PASSWORD': 'your_database_password',
+           'HOST': 'localhost',
+           'PORT': '3306',
+       }
+   }
+   ```
+
+6. Apply the database migrations:
+
+   ```bash
+   python manage.py migrate
+   ```
+
+7. Create a superuser for the Django admin (optional):
+
+   ```bash
+   python manage.py createsuperuser
+   ```
+
+## Running the Application
+
+To start the Django development server, run the following command:
+
+```bash
+python manage.py runserver
+```
+
+You should see output similar to the following:
+
+```
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+```
+
+Open your web browser and visit `http://127.0.0.1:8000/` to access your Django web application.
+
+
+
+That's it! You should now have your Django web application up and running with a MySQL database. Feel free to customize and build upon this template to fit your specific project requirements.
+
+
 ## Screeshots
 ### First Page:
 ![First Page](screenshots/page1.png)
