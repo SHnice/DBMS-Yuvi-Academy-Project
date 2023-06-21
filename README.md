@@ -1,4 +1,4 @@
-# Yuvi #Academy DBMS Project
+# Yuvi Academy DBMS Project
 I develop this end semester project of Database Management Systems course with my team member Yuvraj Sagar. we develop it with Django python framework and MySQL databse.
 
 This is a web-based academy management system developed to streamline and automate administrative tasks in an academy. It aims to improve efficiency and productivity for academy staff while providing a user-friendly interface for students to access their academic records and course materials.
